@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <title>BOUNCE SUPRISE</title>
+  </head>
+  <body>
+    <h1></h1>
+
+    <script src="Bounce Suprise.js"></script>
+  </body>
+</html>
+
+<html>
+    <head>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+document.body.style.background = 'black';
+
+var stars = document.createElement('div');
+stars.style.position = 'absolute';
+stars.style.top = '0';
+stars.style.left = '0';
+stars.style.width = '100%';
+stars.style.height = '100%';
+stars.style.zIndex = '-1';
+document.body.appendChild(stars);
+
+
+var starCount = 100;
+for (var i = 0; i < starCount; i++) {
+  var star = document.createElement('div');
+  star.style.position = 'absolute';
+  star.style.top = Math.random() * 100 + '%';
+  star.style.left = Math.random() * 100 + '%';
+  star.style.width = '1px';
+  star.style.height = '1px';
+  star.style.background = 'white';
+  star.style.opacity = Math.random();
+  stars.appendChild(star);
+}
+
+var starCount = 100;
+var starSpeed = 0.1;
+var starSpeedIncrement = 0.1;
+var starSpeedMax = 1;
+var starSpeedMin = 0.1;
+var starSpeedDirection = 1;
+var starSpeedDirectionChange = 0.1;
+var starSpeedDirectionChangeMax = 0.1;
+var starSpeedDirectionChangeMin = 0.01;
+var starSpeedDirectionChangeDirection = 1;
+var starSpeedDirectionChangeDirectionChange = 0.01;
+var starSpeedDirectionChangeDirectionChangeMax = 0.01;
+var starSpeedDirectionChangeDirectionChangeMin = 0.001;
+var starSpeedDirectionChangeDirectionChangeDirection = 1;
+var starSpeedDirectionChangeDirectionChangeDirectionChange = 0.001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeMax = 0.001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeMin = 0.0001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirection = 1;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChange = 0.0001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeMax = 0.0001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeMin = 0.00001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirection = 1;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChange = 0.00001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeMax = 0.00001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeMin = 0.000001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirection = 1;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChange = 0.000001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeMax = 0.000001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeMin = 0.0000001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirection = 1;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChange = 0.0000001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeMax = 0.0000001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeMin = 0.00000001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirection = 1;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChange = 0.00000001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeMax = 0.00000001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeMin = 0.000000001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirection = 1;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChange = 0.000000001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeMax = 0.000000001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeMin = 0.0000000001;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirection = 1;
+var starSpeedDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChangeDirectionChange = 0.0000000001;
+var starSpeedDirectionChangeD
+
+var explosionCount = 0;
+document.body.addEventListener('click', function(e) {
+  var explosion = document.createElement('div');
+  explosion.style.position = 'absolute';
+  explosion.style.top = e.clientY + 'px';
+  explosion.style.left = e.clientX + 'px';
+  explosion.style.width = '1px';
+  explosion.style.height = '1px';
+  explosion.style.background = 'white';
+  explosion.style.opacity = Math.random();
+  explosion.style.zIndex = '1';
+  explosion.style.borderRadius = '50%';
+  explosion.style.transition = 'all 0.5s';
+  explosion.style.transform = 'scale(0)';
+  explosion.id = 'explosion' + explosionCount;
+  explosionCount++;
+  document.body.appendChild(explosion);
+  setTimeout(function() {
+    explosion.style.transform = 'scale(1)';
+    setTimeout(function() {
+      explosion.style.transform = 'scale(0)';
+      setTimeout(function() {
+        document.body.removeChild(explosion);
+      }, 500);
+    }, 500);
+  }, 10);
+});
+});
+        </script>
+    </head>
+    <body style="margin: 0;">
+        <div style="background-color: black; position: fixed; bottom: 0; width: 100%; height: 20px; padding: 20px; opacity: .85; z-index: 1000;">
+            <svg id="Layer_1" data-name="Layer 1" height="40px" width="40px" style="top: -8px;
+            position: relative;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><defs><style>.cls-1{fill:rgb(0, 0, 0);}</style></defs><title>Snuggies.co</title><path class="cls-1" d="M617.24,354a126.36,126.36,0,0,0-10.86-103.79,127.8,127.8,0,0,0-137.65-61.32,126.36,126.36,0,0,0-95.31-42.49A127.81,127.81,0,0,0,251.5,234.89,126.4,126.4,0,0,0,167,296.19a127.82,127.82,0,0,0,15.72,149.86,126.36,126.36,0,0,0,10.86,103.79,127.81,127.81,0,0,0,137.65,61.32,126.36,126.36,0,0,0,95.31,42.49A127.81,127.81,0,0,0,548.5,565.11,126.4,126.4,0,0,0,633,503.81,127.82,127.82,0,0,0,617.24,354ZM426.58,620.49a94.79,94.79,0,0,1-60.85-22c.77-.42,2.12-1.16,3-1.7l101-58.34a16.42,16.42,0,0,0,8.3-14.37V381.69l42.69,24.65a1.52,1.52,0,0,1,.83,1.17V525.43A95.18,95.18,0,0,1,426.58,620.49ZM222.34,533.26A94.74,94.74,0,0,1,211,469.56c.75.45,2.06,1.25,3,1.79l101,58.34a16.44,16.44,0,0,0,16.59,0l123.31-71.2v49.3a1.53,1.53,0,0,1-.61,1.31L352.19,568.05A95.16,95.16,0,0,1,222.34,533.26ZM195.77,312.77a94.71,94.71,0,0,1,49.48-41.68c0,.87-.05,2.41-.05,3.48V391.25a16.41,16.41,0,0,0,8.29,14.36L376.8,476.8l-42.69,24.65a1.53,1.53,0,0,1-1.44.13l-102.11-59A95.16,95.16,0,0,1,195.77,312.77Zm350.74,81.62L423.2,323.19l42.69-24.64a1.53,1.53,0,0,1,1.44-.13l102.11,58.95a95.08,95.08,0,0,1-14.69,171.55c0-.88,0-2.42,0-3.49V408.75A16.4,16.4,0,0,0,546.51,394.39ZM589,330.44c-.75-.46-2.06-1.25-3-1.79L485,270.31a16.46,16.46,0,0,0-16.59,0l-123.31,71.2v-49.3a1.53,1.53,0,0,1,.61-1.31L447.81,232A95.07,95.07,0,0,1,589,330.44ZM321.89,418.31l-42.7-24.65a1.52,1.52,0,0,1-.83-1.17V274.57a95.07,95.07,0,0,1,155.9-73c-.77.42-2.11,1.16-3,1.7l-101,58.34a16.41,16.41,0,0,0-8.3,14.36Zm23.19-50L400,336.59l54.92,31.7v63.42L400,463.41l-54.92-31.7Z"/></svg>
+            <div style="display: inline-block; color: white; vertical-align: top; margin-top: 4px; font-family: Helvetica, sans-serif;">
+            Founded by the owner of <a style="color: white; text-decoration: none; font-weight: bold;" href="https://www.snuggies.co">Snuggies.co Network</a>
+            </div>
+        </div>
+    </body>
+</html>
